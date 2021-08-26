@@ -62,17 +62,11 @@ set novisualbell
 set t_vb=
 set tm=500
 colorscheme morning
-map <F2> :NERDTreeToggle<cr> 
-map <F3> :TlistToggle<cr>
-map <F4> :term<cr>
-
 
 packadd! dracula
 syntax enable 
 colorscheme gruvbox
 set bg=dark
-autocmd vimenter * NERDTree
-let NERDTreeShowHidden=1
 set guifont=Monospace\ Bold\ 17
 set nu rnu
 set laststatus=2

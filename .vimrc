@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'vim-python/python-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -70,3 +71,5 @@ set bg=dark
 set guifont=Monospace\ Bold\ 17
 set nu rnu
 set laststatus=2
+
+let g:python_highlight_all = 1

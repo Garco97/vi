@@ -12,30 +12,18 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-python/python-syntax'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
-
-
-" PLUG
 
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'yuezk/vim-js'
 call plug#end()
 "PLUG ENDS
 
@@ -43,7 +31,6 @@ call plug#end()
 let mapleader=" "
 nmap <Leader>s <Plug>(easymotion-s2)
 "END EASYMOTION CONF
-
 
 syntax on
 set nu
@@ -63,6 +50,10 @@ set novisualbell
 set t_vb=
 set tm=500
 colorscheme morning
+
+map <F2> :NERDTreeToggle<cr> 
+map <F3> :TlistToggle<cr>
+map <F4> :term<cr>
 
 packadd! dracula
 syntax enable 

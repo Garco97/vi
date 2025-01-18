@@ -13,7 +13,6 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-python/python-syntax'
 Plugin 'tpope/vim-surround'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -55,11 +54,10 @@ map <F2> :NERDTreeToggle<cr>
 map <F3> :TlistToggle<cr>
 map <F4> :term<cr>
 
-packadd! dracula
 syntax enable 
 colorscheme gruvbox
 set bg=dark
-set guifont=Monospace\ Bold\ 17
+set guifont=Monospace\ Bold\ 13
 set nu rnu
 set laststatus=2
 
